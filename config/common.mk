@@ -59,6 +59,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
 
+# For keyboard gesture typing
+PRODUCT_COPY_FILES += \
+    vendor/arrow/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
+    vendor/arrow/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+
 # Bootanimation
 include vendor/arrow/config/bootanimation.mk
 
