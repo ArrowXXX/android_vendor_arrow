@@ -27,7 +27,8 @@ PRODUCT_PACKAGES += \
     Recorder \
     Simple-Gallery \
     stats \
-    Stk
+    Stk \
+    MarkupGoogle
 
 # Themes Dark
 PRODUCT_PACKAGES += \
@@ -71,6 +72,11 @@ PRODUCT_PACKAGES += \
     TealAccent \
     YellowAccent \
     WhiteAccent
+
+
+# Markup libs
+PRODUCT_COPY_FILES += \
+    vendor/arrow/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so
 
 # Fonts
 PRODUCT_COPY_FILES += \
